@@ -37,7 +37,7 @@ Install a current Supabase CLI and Deno. Check available CLI commands using `sup
 
 ## Expected configuration
 
-See `.env.example`. Never commit real credentials. In deployed Edge Functions, Supabase platform variables and the Duitku variables must be configured in the approved environment.
+See `env.example`. Never commit real credentials. In deployed Edge Functions, Supabase platform variables and the Duitku variables must be configured in the approved environment.
 
 ## Official references
 
