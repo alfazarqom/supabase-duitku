@@ -1,5 +1,5 @@
-import { randomToken, sha256Hex } from "../_shared/crypto.ts";
-import { corsHeaders, jsonResponse, preflight, readJson } from "../_shared/http.ts";
+import { sha256Hex } from "../_shared/crypto.ts";
+import { jsonResponse, preflight, readJson } from "../_shared/http.ts";
 import { createInvoiceSignature, duitkuConfig } from "../_shared/duitku.ts";
 import { adminClient, authenticatedUser, env } from "../_shared/supabase.ts";
 
@@ -32,6 +32,7 @@ Deno.serve(async (request) => {
     if (user) {
       if (order.owner_user_id !== user.id) return jsonResponse(403, { error: "order_access_denied" });
     } else {
+      if (order.owner_user_id !== null) return jsonResponse(403, { error: "order_access_denied" });
       if (typeof body.guest_access_token !== "string" || body.guest_access_token.length < 32) {
         return jsonResponse(401, { error: "guest_access_required" });
       }
