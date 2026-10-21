@@ -1,0 +1,29 @@
+name: Deno checks
+
+on:
+  push:
+    branches: ["main", "feat/**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Unit tests
+        run: deno test tests
+      - name: Type-check Edge Functions
+        run: >-
+          deno check
+          supabase/functions/duitku-create-invoice/index.ts
+          supabase/functions/duitku-callback/index.ts
+          supabase/functions/get-payment-status/index.ts
+          supabase/functions/reconcile-payment/index.ts
