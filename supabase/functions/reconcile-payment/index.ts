@@ -1,5 +1,5 @@
 import { jsonResponse, preflight, readJson } from "../_shared/http.ts";
-import { adminClient, authenticatedUser, env } from "../_shared/supabase.ts";
+import { adminClient, authenticatedUser } from "../_shared/supabase.ts";
 
 // V1 deliberately exposes no provider inquiry call: the official POP page reviewed for this
 // implementation does not document a dedicated inquiry endpoint. This endpoint is a protected
