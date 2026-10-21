@@ -1,0 +1,14 @@
+# Local Supabase CLI configuration. This file does not deploy functions.
+project_id = "supabase-duitku"
+
+[functions.duitku-create-invoice]
+verify_jwt = false
+
+[functions.duitku-callback]
+verify_jwt = false
+
+[functions.get-payment-status]
+verify_jwt = false
+
+[functions.reconcile-payment]
+verify_jwt = false
