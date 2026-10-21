@@ -35,6 +35,7 @@ Deno.serve(async (request) => {
     if (user) {
       if (order.owner_user_id !== user.id) return jsonResponse(403, { error: "payment_access_denied" });
     } else {
+      if (order.owner_user_id !== null) return jsonResponse(403, { error: "payment_access_denied" });
       if (typeof body.guest_access_token !== "string" || body.guest_access_token.length < 32) {
         return jsonResponse(401, { error: "guest_access_required" });
       }
