@@ -54,8 +54,8 @@ Status awal berdasarkan pemeriksaan dokumentasi:
 
 | Komponen | Status |
 |---|---|
-| README.md | Tersedia |
-| Dokumentasi teknis terpisah | Belum ditemukan pada pemeriksaan root |
+| README.md | Tersedia; status implementasi tetap perlu diverifikasi |
+| Dokumentasi teknis terpisah | Tersedia di `docs/` sebagai Draft V1; kesesuaian dengan implementasi belum diverifikasi |
 | Struktur aktual Edge Functions | Belum diverifikasi |
 | Migration dan skema database | Belum diverifikasi |
 | Kebijakan RLS dan grants | Belum diverifikasi |
