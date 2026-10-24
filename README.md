@@ -188,6 +188,20 @@ Lihat [docs/deployment.md](docs/deployment.md).
 
 Jangan menonaktifkan validasi signature atau memperluas hak akses sebagai workaround.
 
+## Dokumentasi Resmi Duitku
+
+Gunakan dokumentasi resmi berikut sebagai sumber rujukan untuk implementasi. Pastikan bagian dan kontrak yang relevan diperiksa ulang sebelum mengubah kode; jangan menebak parameter, signature, endpoint, atau format callback.
+
+- [Duitku POP — dokumentasi utama](https://docs.duitku.com/pop/id/)
+- [Duitku API — dokumentasi API](https://docs.duitku.com/api/id/)
+- [Metode pembayaran Duitku POP](https://docs.duitku.com/pop/id/#payment-method)
+- [FAQ resmi Duitku](https://www.duitku.com/frequently-asked-questions/)
+- [Demo Duitku Sandbox](https://api-sandbox.duitku.com/demoduitku/)
+- [Halaman demo pembayaran Sandbox](https://sandbox.duitku.com/payment/demopage.aspx)
+- [Situs resmi Duitku](https://www.duitku.com/)
+
+Dokumentasi dan halaman demo adalah referensi; keberhasilan integrasi tetap harus dibuktikan dengan pemeriksaan kode dan pengujian Sandbox.
+
 ## Dokumentasi
 
 - [Arsitektur](docs/architecture.md)
