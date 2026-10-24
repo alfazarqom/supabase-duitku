@@ -21,6 +21,7 @@ Backend e-commerce berbasis Supabase yang dirancang untuk mendukung pengelolaan 
 - [Pengujian](#pengujian)
 - [Deployment](#deployment)
 - [Troubleshooting](#troubleshooting)
+- [Dokumentasi Resmi Duitku](#dokumentasi-resmi-duitku)
 - [Dokumentasi](#dokumentasi)
 - [Batasan dan Pekerjaan Berikutnya](#batasan-dan-pekerjaan-berikutnya)
 
@@ -204,6 +205,7 @@ Dokumentasi dan halaman demo adalah referensi; keberhasilan integrasi tetap haru
 
 ## Dokumentasi
 
+- [Daftar dokumentasi resmi Duitku](docs/list-dokumentasi-resmi.md)
 - [Arsitektur](docs/architecture.md)
 - [Kontrak API](docs/api-contract.md)
 - [Skema database](docs/database-schema.md)
